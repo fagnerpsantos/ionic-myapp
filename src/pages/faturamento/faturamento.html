@@ -1,0 +1,21 @@
+<!--
+  Generated template for the FaturamentoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Faturamento</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-item-group>
+    <ion-item-divider color="light">Faturamento</ion-item-divider>
+    <ion-item *ngFor="let faturamento of faturamentos">{{faturamento.descricao}} - R$ {{faturamento.valor}}</ion-item>
+  </ion-item-group>
+</ion-content>

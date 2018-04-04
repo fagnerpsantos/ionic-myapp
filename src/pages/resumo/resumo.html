@@ -1,0 +1,27 @@
+<!--
+  Generated template for the ResumoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Resumo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-item-group>
+    <ion-item-divider color="light">Consultas</ion-item-divider>
+    <ion-item>Últimos 30 dias - {{consultas_resumo.consultas_30dias_anteiores}}</ion-item>
+    <ion-item>Próximos 30 dias - {{consultas_resumo.consultas_30dias_posteriores}}</ion-item>
+  </ion-item-group>
+  <ion-item-group>
+    <ion-item-divider color="light">Faturamento</ion-item-divider>
+    <ion-item>Últimos 30 dias - R$ {{faturamento_resumo_anterior.valor}} / {{faturamento_resumo_anterior.comparativo}}%</ion-item>
+    <ion-item>Próximos 30 dias - R$ {{consultas_resumo.consultas_30dias_posteriores}} / {{faturamento_resumo_previsao.comparativo}}%</ion-item>
+  </ion-item-group>
+</ion-content>
